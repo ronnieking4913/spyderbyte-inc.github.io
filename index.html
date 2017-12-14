@@ -1,0 +1,62 @@
+<!----------
+Ronnie King
+12/13/2017
+index.html
+ ---------->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		</head>
+
+		<body>
+			<div id="body-container" class="body-container">
+				<div class="oneida-header">
+
+				</div>
+				<div class="jumbotron">
+					<h1>Ronnie King</h1> 
+					<p>Computer Science Major and Philosophy Minor</p> 
+				</div>
+
+				<nav class="navbar navbar-inverse">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#">Home</a>
+						</div>
+						<div>
+							<ul class="nav navbar-nav">
+								<li>
+									<a class="navbar-brand" href="html_files/about.html">About Me</a>
+								</li>
+								<li>
+									<a class="navbar-brand" href="html_files/oneida-culture.html">Oneida Culture</a>
+								</li> 
+							</ul>
+						</div>
+					</div>
+				</nav>
+				
+				<p id="board-game-desc">Hold the JUMP button to move upward!</p>
+
+				<div id="board-game"> <button onClick="restartGame()" id="restart-btn">Restart</button> </div>
+				<div id="up-btn"><button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.1)">JUMP</button></div>
+				
+			</div>
+
+		</body>
+		
+			<script class="jsHigh"> startGame(); function accelerate(n) {
+													myGamePiece.gravity = n;
+												}			
+			</script>
+		<footer>
+			&copy; 2017 Ronnie King
+		</footer>
+
+	</html>
