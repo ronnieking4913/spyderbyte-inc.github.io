@@ -1,27 +1,30 @@
-<!----------
-Ronnie King
+<!-------------
+SpyderByte Inc
 12/13/2017
 index.html
- ---------->
+ ------------->
 
 <!DOCTYPE html>
 <html>
 
 	<head>
-		<title>Home</title>
+		<title>SpyderByte Inc.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
 		</head>
 
+		<script src="javascript/index.js"></script>
+
 		<body>
-			<div id="body-container" class="body-container">
-				<div class="oneida-header">
+			<div>
+				<div>
 
 				</div>
 				<div class="jumbotron">
-					<h1>Ronnie King</h1> 
-					<p>Computer Science Major and Philosophy Minor</p> 
+					<h1>SpyderByte Inc.</h1> 
+					<p>Program Development For The Future</p> 
 				</div>
 
 				<nav class="navbar navbar-inverse">
@@ -41,22 +44,29 @@ index.html
 						</div>
 					</div>
 				</nav>
-				
-				<p id="board-game-desc">Hold the JUMP button to move upward!</p>
 
-				<div id="board-game"> <button onClick="restartGame()" id="restart-btn">Restart</button> </div>
-				<div id="up-btn"><button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.1)">JUMP</button></div>
+				<div id="dropdown-div">
+				<button onclick="dropdownFunction()" class="drop-button">Navigation</button>
+				<div id="dropdown" class="dropdown-content">
+					<a class="dropdown-links" href="index.html">Home</a>
+					<a class="dropdown-links" href="html/goals.html">About Us</a>
+					<a class="dropdown-links" href="html/goals.html">Contact Us</a>
+				</div>
+			</div>
+				<!-------------------------------Middle of page------------------------------->
+				<h4><u>What We Do</u></h4>
+				<p>
+					We develop Applications for Android. We also have the ability to code websites. If you have any 
+					questions what we can do you for you, feel free to email us at: 
+					<u><a href="mailto:spyderbyteinc@gmail.com">spyderbyteinc@gmail.com</a></u>
+				</p>
 				
 			</div>
 
 		</body>
 		
-			<script class="jsHigh"> startGame(); function accelerate(n) {
-													myGamePiece.gravity = n;
-												}			
-			</script>
 		<footer>
-			&copy; 2017 Ronnie King
+			&copy; 2017 SpyderByte Inc.
 		</footer>
 
 	</html>
