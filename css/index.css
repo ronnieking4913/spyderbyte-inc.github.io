@@ -9,70 +9,64 @@
 	font-family: system-ui;
 }
 
+.page-container
+{
+	min-height: 580px;
+}
+
+/* * * * * * *Header* * * * * * */
 .jumbotron
 {
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+	background-color: #3d3c3c;
+	color: white;
 }
 
-/*Hide the dropdown menu*/
-.navbar
+.header-name
 {
-	display: none;
+	margin-left: 15px;
+	display: inline-block;
+	max-width: 650px;
 }
 
-/* * * * * * * * * The mobile meun* * * * * * * * */
-#dropdown-div
+.header-logo
 {
-	/*display: none;*/
-	padding-left: 15px;
+	display: inline-block;
+	margin-left: 20px
 }
 
-#slideshow
+.header-logo > img
 {
-	height: 200px;
+	vertical-align: initial;
 }
 
-.drop-button
+.navbar-brand
 {
-	width: 100px;
-	height: 50px;
-    cursor: pointer;
-	border-radius: 15px;
-	margin-bottom: 10px;
+	color: white !important;
 }
 
-.dropdown-content 
+.navbar-brand:hover
 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+	background-color: white !important;
+	color: black !important;
 }
 
-.show 
+.middle-content
 {
-	display: block;
-}
-
-.dropdown-links
-{
-	border-style: solid;
-	background-color: #E9E9E9;
-	display: block;
-    color: black;
-	padding: 5px;
-	text-decoration: none;
-}
-
-.dropdown-links:hover
-{
-	background-color: #FFFFFF;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 /*Center the Footer*/
 footer
 {
+	padding-top: 15px;
 	text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .header-logo
+	{
+        display: none;
+    }
 }
