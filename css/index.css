@@ -43,6 +43,7 @@
 .navbar-brand
 {
 	color: white !important;
+	margin-left: 0 !important;
 }
 
 .navbar-brand:hover
